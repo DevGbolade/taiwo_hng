@@ -1,0 +1,444 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color:  #141313;
+}
+
+.container-fluid {
+    max-width: 100%;
+}
+
+section:hover .img-zoom {
+    display: block;
+    animation: zoomimg 2s infinite;
+    -webkit-animation: zoomimg 2s infinite;
+}
+@-webkit-keyframes zoomimg {
+    0% {
+      -webkit-transform: scale(0.9);
+    }
+    25% {
+      -webkit-transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.1);
+    }
+    75% {
+      -webkit-transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(0.9);
+    }
+}
+
+#home-sec {
+    background: #1E90FF;
+    color: #fff;
+}
+
+.home-div {
+    background-image: url('img/logo.svg');
+    background-repeat: no-repeat;
+}
+
+.heading {
+    font-weight: 600;
+    font-size: 95%;
+    line-height: 32px;
+}
+
+.heading span {
+    font-size: 165%;
+}
+
+.subscribe {
+    font-size: 95%;
+    line-height: 22px;
+    font-weight: normal;
+}
+
+.form-div {
+    font-weight: bolder !important;
+    font-size: 100%;
+}
+
+.email {
+    border: 0.946667px solid #FFF;
+    box-sizing: border-box;
+    box-shadow: 3.78667px 3.78667px 3.78667px rgba(0, 0, 0, 0.25);
+    border-radius: 9.46667px;
+    background: #1E90FF;
+    color: #fff;
+    width: 100%;
+}
+
+.form-div #notify {
+    background: #FFF;
+    box-shadow: 3.6px 3.6px 3.6px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    color: #1E90FF;
+    border: none;
+    font-size: 85%;
+}
+
+#notify:hover, .notify #notify:hover .icons a img:hover {
+    box-shadow: -1px -1px 20px -3px #0a223d;
+    transition: all ease 0.3s;
+}
+.inner-right-div {
+    background: url('img/Ellipse\ 11.svg') ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+.phone-div {
+    background: url(img/smallcircle.svg);
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: top;
+    padding-top: 5rem;
+    width: fit-content;
+    margin: auto;
+}
+
+.abt {
+    background: url('img/Group\ 245.svg');
+    background-size: cover;
+}
+
+
+.abt h3 {
+    font-size: 165%;
+    line-height: 49px;
+}
+
+.abt .inner-div {
+    padding: 1rem;
+    border-radius: 4px;
+    margin: auto;
+    box-shadow: 4px 4px 10px 2px #ddd;
+    cursor: pointer;
+}
+
+.feat img {
+    max-width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.inner-div p, .steps p, .feat p {
+    font-size: 95%;
+    line-height: 26px;
+}
+
+.phone-two-div {
+    background: url('img/Ellipse\ 12.svg');
+    background-repeat: no-repeat;
+    background-size: 136%;
+    background-position-y: 30%;
+    background-position-x: center;
+}
+
+.steps h6 {
+    color: #1E90FF;
+}
+
+.mobile-star img {
+    width: 11% !important;
+}
+.desktop-star  {
+    display: none;
+}
+
+.app p, .notify p {
+    font-size: 95%;
+    line-height: 29px;
+}
+
+.gallery {
+background-color: #1E90FF;
+   /* background-image: url('img/Group\ 332.svg');
+   background-repeat: no-repeat;
+   background-size: cover; */
+    color: #fff;
+}
+
+.inner-gallery {
+    background-image: url('img/Group\ 331.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.inner-gallery .row {
+    background-image: url(img/Rectangle\ 104.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 125%;
+}
+
+.footer {
+    background-color: #1E90FF;
+    color: #fff;
+}
+
+.notify h3 {
+    font-size: 150%;
+    line-height: 35px;
+}
+.email-two {
+    border: 0.946667px solid #1E90FF;
+    box-sizing: border-box;
+    box-shadow: 3.78667px 3.78667px 3.78667px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    width: 100%;
+}
+.notify #notify {
+    width: fit-content !important;
+    background-color: #1F90FF;
+    color: #fff;
+    font-weight: bold;
+    outline: none;
+    box-shadow: 3.6px 3.6px 3.6px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    margin: 1rem auto !important;
+    display: block;
+    border: none;
+}
+.footer p {
+    line-height: 17px;
+}
+
+/* -------------------------MEDIA QUERIES ----------------------------- */
+
+/* ---------------------------------------Small screen sizes------------------------------- */
+@media only screen
+and (min-device-width: 400px) {
+    .home-div {
+        background-position-x: 4%;
+        background-position-y: 1%;
+    }
+    .phone-div img {
+        margin-left: 2.5rem;
+    }
+    .phone-two-div {
+        background-size: 120%;
+    }
+}
+
+@media only screen
+and (min-device-width: 550px) {
+    .phone-two-div {
+        background-size: 71%;
+    }
+    .email {
+        width: 75%;
+    }
+    .email-two {
+        width: 50%;
+        margin-right: 1rem;
+    }
+    .notify #notify {
+        display: inline;
+    }
+
+    /*---------------------------- Medium screen sizes----------------- */
+@media only screen
+and (min-device-width: 768px) {
+    .home-div {
+        background-position-x: 5%;
+        background-position-y: 2%;
+    }
+    .inner-left-div {
+        padding-left: 2rem;
+    }
+    .heading, .subscribe {
+        text-align: left !important;
+    }
+    .heading span {
+        font-size: 172%;
+        line-height: 50px;
+    }
+
+    .email {
+        width: 90%;
+    }
+    .phone-div img {
+        margin-left: 0;
+    }
+
+    .phone-two-div {
+        background-size: 100%;
+    }
+    .form-div {
+        font-weight: bolder !important;
+        font-size: 130%;
+    }
+
+    .abt .inner-div {
+        width: 100% !important;
+        margin: 1rem !important;
+    }
+
+    .app p {
+        text-align: left !important;
+        margin: 3rem 0 0 1.5rem !important;
+    }
+
+    .mobile-star {
+        display: none;
+    }
+
+    .desktop-star {
+        display: block;
+    }
+
+    .steps .row {
+        margin: 3rem .5rem!important;
+    }
+
+    .content-one {
+        padding-top: 6rem !important;
+        text-align: left;
+    }
+    .content-two {
+        text-align: right;
+        padding-top: 5rem !important;
+    }
+    .content-three {
+        padding-top: 4rem !important;
+        text-align: left;
+    }
+    .content-img {
+        padding-top: 5rem !important;
+    }
+  
+    .notify-div {
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .email-two {
+       width: 65%;
+    }
+}
+
+/* --------------------------------- Large screen sizes----------------------------------- */
+@media only screen
+and (min-device-width: 1000px) {
+    .heading {
+        font-size: 112%;
+        line-height: 36px;
+    }
+    .heading span {
+        font-size: 240%;
+        line-height: 65px;
+    }
+
+    .subscribe {
+        font-size: 109%;
+    }
+
+    .form-div {
+        font-size: 150%;
+    }
+
+    .form-div form {
+        margin: 1rem 0;
+    }
+
+    .email {
+        padding: 1rem !important;
+    }
+
+    .form-div .notify {
+        padding: 1rem 3rem !important;
+    }
+    .abt-div .row {
+        margin-top: 4rem !important;
+    }
+
+    .inner-div p, .steps p, .feat p, .app p, .notify p, .footer p {
+        font-size: 110%;
+        line-height: 32px;
+    }
+    .app p {
+        line-height: 36px;
+    }
+    .phone-two-div {
+        background-size: 77%;
+    }
+    .steps h6 {
+        font-size: 130%;
+    }
+    .content-one {
+        padding-top: 6rem !important;
+        text-align: left;
+    }
+    .content-two {
+        text-align: right;
+        padding-top: 5rem !important;
+    }
+    .content-three {
+        padding-top: 2rem !important;
+    }
+    .content-img {
+        padding-top: 5rem !important;
+    }
+}
+@media only screen
+and (min-device-width: 1400px) {
+    .home-div {
+        background-position-x: 6%;
+        background-position-y: 5%;
+    }
+    .inner-home-div {
+        padding: 0 0 4rem 3rem;
+    }
+    .heading {
+        font-size: 112%;
+        margin-top: 4rem !important;
+    }
+    .inner-right-div {
+        background-image: url('img/Group\ 282.svg');
+        background-repeat: no-repeat;
+        background-position-x: 100%;
+        background-position-y: top;
+    }
+    .phone-div {
+        background-image: none;
+        padding-top: 5rem;
+        width: 100%;
+        padding-left: 5rem;
+    }
+    .abt .inner-div {
+        margin: 2rem !important;
+        padding: 2rem !important;
+    }
+    .abt-div .row .row {
+        max-width: 90%;
+        margin: auto;
+    }
+    .app .row .row {
+        padding: 2% 8%;
+    }
+    .phone-two-div {
+        background-size: 86%;
+    }
+
+    .steps .row .row {
+        padding: 0 7%;
+    }
+    .notify-div {
+        max-width: 55%;
+        margin: auto;
+    }
